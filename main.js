@@ -82,10 +82,54 @@
 // }
 
 //Практическое задание №5
-for (let i = 1; i <= 4; i++) {
-  let a = "";
-  for (let j = 1; j <= i; j++) {
-    a += "*";
-  }
-  console.log(a);
+// for (let i = 1; i <= 4; i++) {
+//   let a = "";
+//   for (let j = 1; j <= i; j++) {
+//     a += "*";
+//   }
+//   console.log(a);
+// }
+
+//Обьявление функции
+// function sum(a, b) {
+//     return a + b;
+// }
+
+// console.log(sum(3, 5));
+
+//Практическое задание №1 6.3
+// function multipy(c, d) {
+//     return c * d;
+// }
+// console.log(multipy(4, 4))
+
+//Функция без return
+// function sayHello(name) {
+//   console.log(`Hello, ${name}`);
+// }
+// sayHello("Иван");
+
+//Практическая работа №2
+// function printInfo(name, age){
+//     console.log(`Привет, ${name} тебе ${age}`)
+// }
+// printInfo("Тимофей" , 18)
+
+//6.6. Значения параметров по умолчанию
+// function greet(name = "Гость"){
+//     console.log("Привет, " + name);
+// }
+// greet();
+// greet("Диана");
+
+//Практическое задание №3
+function calculateDiscount (price, discountPercent = 10) {
+  return price - (price * discountPercent) / 100;
 }
+console.log("Авто:", calculateDiscount(1000));
+console.log("Со скидкой 20%:", calculateDiscount(1000, 20));
+
+const add = function (a, b) {
+  return a + b;
+};
+console.log(add(2, 3));
