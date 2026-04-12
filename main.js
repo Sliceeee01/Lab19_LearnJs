@@ -123,13 +123,49 @@
 // greet("Диана");
 
 //Практическое задание №3
-function calculateDiscount (price, discountPercent = 10) {
-  return price - (price * discountPercent) / 100;
-}
-console.log("Авто:", calculateDiscount(1000));
-console.log("Со скидкой 20%:", calculateDiscount(1000, 20));
+// function calculateDiscount (price, discountPercent = 10) {
+//   return price - (price * discountPercent) / 100;
+// }
+// console.log("Авто:", calculateDiscount(1000));
+// console.log("Со скидкой 20%:", calculateDiscount(1000, 20));
 
-const add = function (a, b) {
-  return a + b;
+// const add = function (a, b) {
+//   return a + b;
+// };
+// console.log(add(2, 3));
+
+// const add = function (a, b) {
+//     return a + b;
+// };
+// console.log(add(2, 3));
+
+// function makeCounter() {
+//     let count = 0;
+//     return function () {
+//         count++;
+//         return count;
+//     };
+// }
+
+// const counter = makeCounter();
+// console.log(counter());
+// console.log(counter());
+// console.log(counter());
+
+function sumFunc(a, b) {
+    return a + b;
+}
+const sumFunc2 = (a, b) => a + b;
+
+const double = x => x * 2;
+
+const sumFunc3 = (a, b) => a + b;
+
+const sayGreeting = () => console.log("Hello");
+
+const square = x => x * x;
+const calculate = (a, b) => {
+    let result = a + b;
+    return result * 2;
 };
-console.log(add(2, 3));
+
